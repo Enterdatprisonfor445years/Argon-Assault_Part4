@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -524,6 +524,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1437167956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9011696804879341375, guid: 00ed94c47e3318e4b912a0f32ba8e6db, type: 3}
+  m_PrefabInstance: {fileID: 36911124470319818}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1467080995
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,6 +621,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1484445476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9163827890887983167, guid: 00ed94c47e3318e4b912a0f32ba8e6db, type: 3}
+  m_PrefabInstance: {fileID: 36911124470319818}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1707986101 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1805304727657098528, guid: 00ed94c47e3318e4b912a0f32ba8e6db, type: 3}
@@ -664,6 +674,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 3547475804381402355, guid: 00ed94c47e3318e4b912a0f32ba8e6db, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547475804381402355, guid: 00ed94c47e3318e4b912a0f32ba8e6db, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 1484445476}
+    - target: {fileID: 3547475804381402355, guid: 00ed94c47e3318e4b912a0f32ba8e6db, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 1437167956}
     - target: {fileID: 3659263317153827344, guid: 00ed94c47e3318e4b912a0f32ba8e6db, type: 3}
       propertyPath: m_LocalPosition.x
       value: 234
@@ -703,6 +725,14 @@ PrefabInstance:
     - target: {fileID: 3659263317153827344, guid: 00ed94c47e3318e4b912a0f32ba8e6db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.00001219562
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011696804879341375, guid: 00ed94c47e3318e4b912a0f32ba8e6db, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163827890887983167, guid: 00ed94c47e3318e4b912a0f32ba8e6db, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
