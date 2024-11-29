@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 2535663886010622902}
   - component: {fileID: 2193404300229986252}
   - component: {fileID: 2662644557261268133}
+  - component: {fileID: 3251277696493719418}
   m_Layer: 0
-  m_Name: Explosion VFX
+  m_Name: Enemy Explosion VFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 6087803772576897719}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 234.94, y: 89.4, z: 133.04}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -50,7 +51,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -222,8 +223,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.5882353, g: 0.039943, b: 0.77254903, a: 0.54509807}
-      maxColor: {r: 0.4433962, g: 0.030638605, b: 0.0016731602, a: 0.7372549}
+      minColor: {r: 0.054004956, g: 0.1826781, b: 0.7735849, a: 0.54509807}
+      maxColor: {r: 0, g: 0.44313726, b: 0.383212, a: 0.7372549}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4829,3 +4830,16 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &3251277696493719418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6087803772576897719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a2cc18fd28cf5e4b83322cd1fccdd62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeTillDestroy: 3
